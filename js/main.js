@@ -18,7 +18,7 @@ const renderCardContent = (data) => {
 	cardSubtitleEl.textContent = location;
 
 	const cardDescEl = cardEl.querySelector('.card__desc');
-	cardDescEl.textContent = `"${job}"`;
+	cardDescEl.textContent = `"${job}."`;
 
 	mainContainerEl.appendChild(cardEl);
 };
