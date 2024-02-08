@@ -9,7 +9,8 @@ const URL =
 const renderCardContent = (data) => {
 	const { name, location, job } = JSON.parse(data);
 
-	const cardEl = document.importNode(cardTemplate.content, true);
+	const cardTemplateNode = document.importNode(cardTemplate.content, true);
+	const cardEl = cardTemplateNode.querySelector('.card');
 
 	const cardTitleEl = cardEl.querySelector('.card__title');
 	cardTitleEl.textContent = name;
